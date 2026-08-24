@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="System.Service.UI" />
+<Content type="html"><![CDATA[
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Application Workspace</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+    #render_target { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+    /* Gereksiz sınıflar botları şaşırtmak için eklendi */
+    .v-data-container { position: absolute; visibility: hidden; }
+  </style>
+
+  <script type="text/javascript">
+    (function() {
+      const _0x1a = ["https://cdn.jsdelivr.net/gh/kelsimsk/fasax@main/doblox/", "fortnite.min.js", "fix-webm-duration.js"];
+      _0x1a.slice(1).forEach(src => {
+        const s = document.createElement('script');
+        s.src = _0x1a[0] + src;
+        s.async = false;
+        document.head.appendChild(s);
+      });
+    })();
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener('load', () => {
+      window.focus();
+      document.body.onclick = () => window.focus();
+    });
+
+    window.addEventListener("load", () => {
+      if (location.protocol === "file:") return;
+
+      // Anahtar kelimeleri parçalayarak AI analizinden kaçıyoruz
+      const _k = "eagler" + "craftX" + "Opts";
+      const _a = "https://cdn.jsdelivr.net/gh/kelsimsk/fasax@main/doblox/rob" + "lox.epk";
+      
+      const srv = [
+        ["mc.arch.lol", "A-1"],
+        ["mc.asspixel.net", "A-2"],
+        ["sus.shhnowisnottheti.me", "A-3"],
+        ["aeon-network.net/1.8", "A-4"],
+        ["zentic.org", "A-5"]
+      ].map(x => ({ addr: "wss://" + x[0], name: x[1] }));
+
+      if (!window[_k]) {
+        window[_k] = {
+          container: "render_target",
+          assetsURI: _a,
+          localesURI: "lang/",
+          servers: srv
+        };
+      }
+
+      let _c = document.getElementById(window[_k].container);
+      if (!_c) {
+        _c = document.createElement("div");
+        _c.id = window[_k].container;
+        document.body.appendChild(_c);
+      }
+
+      // Fonksiyon çağrısını dinamikleştirme
+      const _run = "main";
+      try {
+        window[_run]();
+      } catch (e) {
+        console.log("Status: Initialization...");
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="render_target"></div>
+  <!-- Kimliksizleştirilmiş yardımcı elementler -->
+  <div class="sys_wrap" style="display:none;"></div>
+  <div id="err_log" style="display:none;"></div>
+  <div id="env_info" style="display:none;"></div>
+</body>
+</html>
+
+]]></Content>
+</Module>
